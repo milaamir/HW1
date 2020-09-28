@@ -1,0 +1,20 @@
+1. Создаём новую базу данных
+2. В папке таблицы, создаём следующие таблицы с параметрами:
+
+CREATE TABLE `students` (
+  `user_id` int NOT NULL,
+  `groups_id` int NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+CREATE TABLE `students` (
+  `user_id` int NOT NULL,
+  `groups_id` int NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+CREATE TABLE `teachers` (
+  `id` int NOT NULL,
+  `user_id` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`,`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 
